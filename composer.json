@@ -4,7 +4,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": ">=7.2.5",
+        "php": ">=8",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "symfony/console": "5.4.*",
@@ -12,9 +12,12 @@
         "symfony/flex": "^1.17",
         "symfony/framework-bundle": "5.4.*",
         "symfony/runtime": "5.4.*",
+        "symfony/twig-bundle": "5.4.*",
         "symfony/yaml": "5.4.*"
     },
     "require-dev": {
+        "symfony/debug-bundle": "5.4.*",
+        "symfony/web-profiler-bundle": "5.4.*"
     },
     "config": {
         "optimize-autoloader": true,
