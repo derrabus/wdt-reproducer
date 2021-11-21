@@ -4,13 +4,19 @@
     <div id="container"></div>
 
     <script>
-        setTimeout(async () => {
+        const fetchContent = async () => {
             const response = await fetch('/content');
             const content = await response.text();
             const element = document.createElement('div');
 
             element.innerHTML = content;
             document.getElementById('container').append(element);
-        }, 2000);
+        };
+
+        setTimeout(fetchContent, 2000);
+        setTimeout(fetchContent, 2000);
+        setTimeout(fetchContent, 2000);
+        setTimeout(fetchContent, 2000);
+        setTimeout(fetchContent, 2000);
     </script>
 {% endblock %}
